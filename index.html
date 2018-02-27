@@ -905,8 +905,13 @@
 		<div id="scroll"></div>
 		<!-- End scroll percentage -->		
 		
-
-
+                <!-- Including jQuery file -->
+                <script type="text/javascript">
+                document.ondragstart = noselect; 
+                document.onselectstart = noselect; 
+                document.oncontextmenu = noselect; 
+                function noselect() {return false;} 
+                </script>
 		<!-- Including jQuery file -->
 		<script src="js/jquery-1.12.1.min.js"></script>
 		<!-- Including jQuery.appear file -->
